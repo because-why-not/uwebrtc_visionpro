@@ -1,0 +1,3 @@
+[submodule "com.unity.webrtc"]
+	path = com.unity.webrtc
+	url = https://github.com/Unity-Technologies/com.unity.webrtc.git
