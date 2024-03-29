@@ -1,8 +1,10 @@
 #!/bin/bash -eu
+source env.sh
+
 export PLATFORM_DIR_NAME="mac"
 export UWEBRTC_DIR="$(pwd)/com.unity.webrtc"
 export PATH="${UWEBRTC_DIR}/depot_tools:$PATH"
-export PYTHON3_BIN="${UWEBRTC_DIR}/depot_tools/python-bin/python3"
+export PYTHON3_BIN="$(pwd)/depot_tools/python-bin/python3"
 export ARTIFACTS_DIR="${UWEBRTC_DIR}/artifacts/${PLATFORM_DIR_NAME}"
 export WEBRTC_DIR="$(pwd)/src"
 mkdir -p "$ARTIFACTS_DIR/lib"

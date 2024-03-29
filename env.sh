@@ -8,6 +8,6 @@ if [ -z "${_ENV_ME_ONCE-}" ]; then
         export XCODE_PATH="/Applications/Xcode.app"
     fi
     echo "Using xcode form ${XCODE_PATH}"
-    PATH=${DEPOT_TOOLS}:$PATH
-
+    export PATH=${DEPOT_TOOLS}:$PATH
+    echo ${PATH}
 fi

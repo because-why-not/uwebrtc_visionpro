@@ -1,11 +1,12 @@
 #!/bin/bash -eu
-pushd ./com.unity.webrtc 
+source env.sh
+cd ./com.unity.webrtc 
 
 export SOLUTION_DIR=$(pwd)/Plugin~
 export DYLIB_FILE=$(pwd)/Runtime/Plugins/macOS/libwebrtc.dylib
 export ARTIFACTS_DIR="$(pwd)/artifacts/mac"
 
-# Download LibWebRTC 
+# copy from WebRTC build (must be done first via ./build_webrtc scripts)
 rsync -rav --delete ${ARTIFACTS_DIR}/ $SOLUTION_DIR/webrtc
 
 # Remove old dylib file
@@ -15,4 +16,3 @@ rm -rf "$DYLIB_FILE"
 cd "$SOLUTION_DIR"
 cmake --preset=macos
 cmake --build --preset=release-macos --target=WebRTCPlugin
-popd

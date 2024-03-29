@@ -1,4 +1,5 @@
 #!/bin/bash -eu
+source env.sh
 cd ./com.unity.webrtc 
 
 export ARTIFACTS_DIR="$(pwd)/artifacts/ios"
