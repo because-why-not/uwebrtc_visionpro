@@ -1,7 +1,7 @@
 #!/bin/bash -eu
 set -e
 source env.sh
-cd ./com.unity.webrtc x
+cd ./com.unity.webrtc
 
 export PLATFORM_DIR_NAME="xros"
 
