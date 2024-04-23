@@ -1,7 +1,7 @@
 #change this if you need a custom python version
-#export PYTHON3_BIN="python"
+export PYTHON3_BIN="python"
 #using python3 via depot_tools (seems to cause bugs sometimes?)
-export PYTHON3_BIN="$(pwd)/depot_tools/python-bin/python3"
+#export PYTHON3_BIN="$(pwd)/depot_tools/python-bin/python3"
 echo "Using python command: ${PYTHON3_BIN}"
 echo "versions:"
 #last tested Python 3.9.16
