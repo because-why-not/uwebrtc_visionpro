@@ -1,6 +1,4 @@
 #!/bin/bash -eu
-#attempt to use the new cmake toolchain for visionos but the 
-#resulting plugin still crashes
 set -e
 source env.sh
 cd ./com.unity.webrtc
