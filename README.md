@@ -14,7 +14,9 @@ Ideally, try to build the official com.unity.webrtc first to make sure nothing i
 ## Setup
 In the terminal run the following:
 
-    git clone –recursive https://github.com/because-why-not/uwebrtc_visionpro.git
+    #this checks out the repository and its submoduels
+    #this includes a fork of com.unity.webrtc which is absolutely massive. We use "--shallow-submodule" to reduce the size
+    git clone --recurse-submodules --shallow-submodule https://github.com/because-why-not/uwebrtc_visionpro.git
     cd uwebrtc_visionpro
     #this will download third party dependencies of libwebrtc and can take a long time
     ./init.sh
