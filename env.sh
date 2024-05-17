@@ -1,3 +1,4 @@
+#!/bin/bash -eu
 #change this if you need a custom python version
 export PYTHON3_BIN="python"
 #using python3 via depot_tools (seems to cause bugs sometimes?)

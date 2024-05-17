@@ -1,5 +1,4 @@
 #!/bin/bash -eu
-set -e
 source env.sh
 cd ./com.unity.webrtc
 

@@ -1,5 +1,4 @@
 #!/bin/bash -eu
-set -e
 source env.sh
 
 export PLATFORM_DIR_NAME="xros"
