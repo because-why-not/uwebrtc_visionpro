@@ -7,6 +7,7 @@ Before building make sure you have:
 * the latest cmake (`brew install cmake`)
 * an ARM based mac build machine
 * Unity 2022.3.21f1
+* Use python 3.9.x (not 3.10 or higher as these removed packages needed)
 
 Ideally, try to build the official com.unity.webrtc first to make sure nothing is missing. 
 
