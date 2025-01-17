@@ -20,7 +20,7 @@ do
       --args="is_debug=${is_debug} \
       target_os=\"ios\" \
       xros=true \
-      ios_target_override=\"arm64-apple-xros1.0-simulator\" \
+      ios_target_override=\"arm64-apple-xros2.2-simulator\" \
       ios_sdk_override=\"${XCODE_PATH}/Contents/Developer/Platforms/XRSimulator.platform/Developer/SDKs/XRSimulator.sdk\" \
       clang_base_path=\"${XCODE_PATH}/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/\" \
       clang_use_chrome_plugins = false \
